@@ -1,0 +1,16 @@
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 15vw;
+    top: 1rem;
+    width:80vw;
+    padding-bottom: 2rem;
+}
+
+img {
+    position: relative;
+    float:left;
+    padding-right:1rem;
+}
