@@ -1,4 +1,13 @@
-.portfolio {
+:root {
+    --color-bg: #34675E;
+    --color-bg-variant: #54877E;
+    --color-primary: #CAC598;
+    --color-primary-variant: #AAA578;
+    --color-white: #fff;
+    --color-light: rgba(255, 255, 255, 0.6);
+}
+
+.portfolio-mobile {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,6 +15,17 @@
     left: 15vw;
     top: 1rem;
     width:80vw;
+    padding-bottom: 5rem;
+}
+
+.portfolio-desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 5rem;
+    left: 15vw;
+    width:70vw;
     padding-bottom: 2rem;
 }
 
@@ -14,3 +34,102 @@ img {
     float:left;
     padding-right:1rem;
 }
+
+
+.react-tabs {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .react-tabs__tab-list {
+    border-bottom: 1px solid var(--color-primary-variant);
+    margin: 0 0 10px;
+    padding: 0;
+  }
+  
+  .react-tabs__tab {
+    display: inline-block;
+    border: 1px solid transparent;
+    border-bottom: none;
+    bottom: -1px;
+    position: relative;
+    list-style: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    color: var(--color-primary);
+    border-radius: 5px 5px 0 0;
+    transition: all 400ms ease;
+  }
+
+  .react-tabs__tab:hover {
+    color: var(--color-bg);
+    background-color: var(--color-white);
+  }
+
+  .react-tabs__tab:after {
+    opacity: 1;
+    transition: all 400ms ease-in-out;
+  }
+
+  .react-tabs__tab:hover::after {
+    opacity: 1;
+    content: '';
+    position: absolute;
+    height: 5px;
+    left: -4px;
+    right: -4px;
+    bottom: -5px;
+    background: var(--color-primary);
+  }
+  
+  .react-tabs__tab--selected {
+    background: var(--color-primary);
+    border-color: var(--color-primary-variant);
+    color: var(--color-bg);
+  }
+  
+  .react-tabs__tab--disabled {
+    color: var(--color-primary);
+    cursor: default;
+  }
+  
+  .react-tabs__tab:focus {
+    outline: none;
+  }
+  
+  .react-tabs__tab:focus:after {
+    content: '';
+    position: absolute;
+    height: 5px;
+    left: -4px;
+    right: -4px;
+    bottom: -5px;
+    background: var(--color-primary);
+  }
+  
+  .react-tabs__tab-panel {
+    display: none;
+  }
+  
+  .react-tabs__tab-panel--selected {
+    display: block;
+    padding: 1rem;
+  }
+
+  @media screen and (max-width:600px) {
+      .portfolio-desktop{
+        display: none;
+      }
+      .portfolio-mobile {
+        display: block;
+      }
+  }
+
+  @media screen and (min-width:601px) {
+    .portfolio-desktop{
+      display: block;
+    }
+    .portfolio-mobile {
+      display: none;
+    }
+}
+  
