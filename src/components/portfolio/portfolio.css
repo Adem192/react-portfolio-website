@@ -7,34 +7,93 @@
     --color-light: rgba(255, 255, 255, 0.6);
 }
 
+.portfolio {
+  padding:0;
+  margin:0;
+}
+
 .portfolio-mobile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    left: 15vw;
-    top: 1rem;
-    width:80vw;
-    padding-bottom: 5rem;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  left: 15vw;
+  top: 1rem;
+  width:65vw;
+  padding-bottom: 5rem;
 }
 
 .portfolio-desktop {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    top: 5rem;
-    left: 15vw;
-    width:70vw;
-    padding-bottom: 2rem;
+  height:95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 2rem;
+  left: 15vw;
+  width:70vw;
+  padding-bottom: 2rem;
 }
 
-img {
+.portfolio-mobile h2 {
+  position: relative;
+  top:-1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(202, 197, 152, 0.2);
+  border-radius: 10px;
+}
+
+.portfolio-mobile h2:before {
+  content: '';
+  width: 8rem;
+  height: 1px;
+  background: var(--color-primary);
+}
+
+.portfolio-mobile h2:after {
+  content: '';
+  width: 8rem;
+  height: 1px;
+  background: var(--color-primary);
+}
+
+.portfolio-desktop h2 {
+  position: relative;
+  top:-1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(202, 197, 152, 0.2);
+  border-radius: 10px;
+}
+
+.portfolio-desktop h2:before {
+  content: '';
+  width: 80rem;
+  height: 1px;
+  background: var(--color-primary);
+}
+
+.portfolio-desktop h2:after {
+  content: '';
+  width: 80rem;
+  height: 1px;
+  background: var(--color-primary);
+}
+
+.portfolio-desktop img, .portfolio-mobile img {
     position: relative;
     float:left;
     padding-right:1rem;
+    min-width: 150px;
 }
 
+.portfolio-desktop img {
+  width:30%;
+}
 
 .react-tabs {
     -webkit-tap-highlight-color: transparent;
@@ -64,22 +123,6 @@ img {
     color: var(--color-bg);
     background-color: var(--color-white);
   }
-
-  .react-tabs__tab:after {
-    opacity: 1;
-    transition: all 400ms ease-in-out;
-  }
-
-  .react-tabs__tab:hover::after {
-    opacity: 1;
-    content: '';
-    position: absolute;
-    height: 5px;
-    left: -4px;
-    right: -4px;
-    bottom: -5px;
-    background: var(--color-primary);
-  }
   
   .react-tabs__tab--selected {
     background: var(--color-primary);
@@ -94,16 +137,6 @@ img {
   
   .react-tabs__tab:focus {
     outline: none;
-  }
-  
-  .react-tabs__tab:focus:after {
-    content: '';
-    position: absolute;
-    height: 5px;
-    left: -4px;
-    right: -4px;
-    bottom: -5px;
-    background: var(--color-primary);
   }
   
   .react-tabs__tab-panel {

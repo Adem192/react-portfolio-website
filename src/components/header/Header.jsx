@@ -1,16 +1,16 @@
 import React from 'react'
 import './header.css'
 import CTA from './CTA'
-import ME from '../../assets/headshot.jpg'
+import ME from '../../assets/headshot2.jpeg'
 import LOGO from '../../assets/AK.png'
 
 const Header = () => {
   return (
     <header>
       <div className="container header__container">
-        <div className="logo">
+        {/* <div className="logo">
           <p className='logo-text'>AK</p>
-        </div>
+        </div> */}
         
         <h5>Hello! I'm</h5>
         <h1>Adem Kanca</h1>

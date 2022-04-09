@@ -1,7 +1,7 @@
 header {
     height: 100vh;
-    padding-top: 5rem;
-    padding-bottom: rem;
+    padding-top: 1rem;
+    margin: 0 2rem;
 }
 
 .header__container {
@@ -17,14 +17,14 @@ header {
     display: flex;
     justify-content: center;
     gap: 1.2rem;
+    margin-right:1rem;
 }
 
 /* =========== IMGS ===========*/
 
 .logo {
     position: absolute;
-    top:-4rem;
-    left:1rem;
+    left:0;
     width:4.25rem;
     height:4rem;
     border-radius: 5px;
@@ -50,5 +50,9 @@ header {
 }
 
 .me img {
-    max-width:400px;
+    max-width:300px;
+    border-radius: 40px;
+    border: 2px solid var(--color-primary);
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+    z-index: 10;
 }
