@@ -13,12 +13,12 @@ function MyApp () {
       return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  if (offset >= 460){
+  if (offset >= 550){
     const contact = document.getElementsByClassName("contact");
     contact[0].style.display = "block"; 
   }
   
-  if (offset < 460 && offset > 0){
+  if (offset < 550 && offset > 0){
     const contact = document.getElementsByClassName("contact");
     contact[0].style.display = "none"; 
   }
