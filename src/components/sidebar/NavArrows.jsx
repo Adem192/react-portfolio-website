@@ -13,8 +13,8 @@ function scrollUp(){
 const NavArrows = () => { 
   return (
     <div className='nav__arrows'>
-        <a className='btn' onClick={scrollUp}>⇑</a>
-        <a className='btn' onClick={scrollDown}>⇓</a>
+        <a className='btn up' onClick={scrollUp}>⇑</a>
+        <a className='btn down' onClick={scrollDown}>⇓</a>
     </div>
   )
 }

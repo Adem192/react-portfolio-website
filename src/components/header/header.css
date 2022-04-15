@@ -13,11 +13,14 @@ header {
 /* =========== CTA ===========*/
 
 .cta {
-    margin-top: 2.5rem;
     display: flex;
     justify-content: center;
-    gap: 1.2rem;
-    margin-right:1rem;
+    gap: 3vw;
+    margin:2rem 0rem;
+}
+
+.btn {
+    font-size: min(max(2px, 4vw), 14px);
 }
 
 /* =========== IMGS ===========*/
