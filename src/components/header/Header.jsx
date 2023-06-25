@@ -12,9 +12,9 @@ const Header = () => {
           <p className='logo-text'>AK</p>
         </div> */}
         
-        <h5>Hello! I'm</h5>
+        <p classname="text-intro">Hello! I'm</p>
         <h1>Adem Kanca</h1>
-        <h5 className="text-light">Fullstack Web Developer</h5>
+        <h2 className="text-light">Fullstack Web Developer</h2>
 
         <div className="me">
           <img src={ME} alt="" />

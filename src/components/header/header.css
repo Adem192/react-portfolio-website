@@ -1,5 +1,5 @@
 header {
-    height: 100vh;
+    height: 92vh;
     padding-top: 1rem;
     margin: 0 2rem;
 }
@@ -8,6 +8,10 @@ header {
     text-align: center;
     height: 100%;
     position: relative;
+}
+
+.text-intro {
+    font-size: 1.2em;
 }
 
 /* =========== CTA ===========*/
